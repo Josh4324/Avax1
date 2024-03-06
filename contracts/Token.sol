@@ -33,7 +33,7 @@ contract JoshToken is ERC20, Ownable {
     /// @dev
     /// @param addr The address from which tokens will be burned
     /// @param amount The amount of token to be burned
-    function burn(address addr, uint256 amount) external {
-        _burn(addr, amount);
+    function burn(uint256 amount) external {
+        _burn(msg.sender, amount);
     }
 }
