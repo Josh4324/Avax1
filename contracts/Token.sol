@@ -36,4 +36,15 @@ contract JoshToken is ERC20, Ownable {
     function burn(uint256 amount) external {
         _burn(msg.sender, amount);
     }
+
+    /**
+     *
+     * Requirements:
+     *
+     * - `to` cannot be the zero address.
+     * - the caller must have a balance of at least `amount`.
+     */
+    function send(address to, uint256 amount) external {
+        transfer(to, amount);
+    }
 }
