@@ -1,10 +1,10 @@
 # Project Title
 
-ERC20 Token
+Defi Empire
 
 ## Description
 
-This contract allows users to mint, burn and transfer token
+This contract allows players to collect, build, and battle with their digital assets, earning rewards through various game activities.
 <br/><br/>
 
 ## Getting Started
